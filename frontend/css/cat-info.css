@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.cat-container {
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+    gap: 100px;
+    max-width: 1400px;
+}
+
+.cat-img-top {
+    width: 500px;
+    height: 250px;
+    position: relative;
+}
+
+.cat-img-top::before{
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 30px;
+    background-color: #DEC68B;
+    left: -10px;
+    top: 10%;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.cat-img-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.cat-info-container h4, p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.cat-info-container h4 {
+    font-weight: 200;
+}
+
+.cat-status {
+    display: flex;
+}
+
+.cat-status div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cat-status p {
+    margin: 4px 0;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cat-status div span {
+    width: 40px;
+    height: 7px;
+    border-radius: 20px;
+}
+
+.cat-status div .active {
+    background-color: #544439;
+}
+
+.cat-status div .deactive {
+    background-color: #E0E0E0;
+}
+
+.other-photos-container {
+    width: 95%;
+    margin: 50px auto;
+    max-width: 1400px;
+}
+
+.other-photos-content {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.other-photos-content img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #000;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-radius: 20px 20px 0 0 ;
+    justify-content: space-around;
+}
+
+footer p {
+    color: #fff;
+    font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+    .cat-container {
+        flex-direction: column;
+    }
+    
+     .other-photos-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        place-items: center;
+     }   
+}
+
+@media (max-width: 600px) {
+    .cat-img-top {
+        max-width: 350px;
+    }
+
+    .cat-status {
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10px;
+    }
+    
+    footer {
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+        flex-direction: column;
+        height: 150px;
+        padding: 0 20px;
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/add-cat.css">
+    <script src="../js/add-cat.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../img/CatwikiLogo.svg">
+        </a>
+    </header>
+
+    <section>
+        <label tabindex="0" class="top-cat-img">
+            <input type="file" id="top-img">
+            <span class="picture-image">choose a top cat image</span>
+        </label>
+
+        <div class="text-inputs">
+
+            <label>
+                cat name:
+                <input type="text" id="cat-name">
+            </label>
+
+
+            <label>
+                temperament:
+                <input type="text" id="cat-temperament">
+            </label>
+
+            <label>
+                origin:
+                <input type="text" id="cat-origin">
+            </label>
+
+            <label>
+                life span:
+                <input type="text" id="cat-life-span">
+            </label>
+
+            <label class="info-input">
+                info:
+                <textarea cols="40" rows="10" type="text" id="cat-info"></textarea>
+            </label>
+
+        </div>
+
+        <div class="select-inputs">
+            <div>
+                <h1>adaptability</h1>
+                <select id="cat-status01">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div>
+                <h1>affection level</h1>
+                <select id="cat-status02">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div>
+                <h1>child friendly</h1>
+                <select id="cat-status03">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div>
+                <h1>grooming</h1>
+                <select id="cat-status04">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div>
+                <h1>intelligence</h1>
+                <select id="cat-status05">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div>
+                <h1>health issues</h1>
+                <select id="cat-status06">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div>
+                <h1>social needs</h1>
+                <select id="cat-status07">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div>
+                <h1>stranger friendly</h1>
+                <select id="cat-status08">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="other-img-inputs">
+            <label class="other-cat-img" tabindex="0">
+                <input type="file" id="other-img01">
+                <span class="picture-image">choose a other image01</span>
+            </label>
+
+            <label class="other-cat-img" tabindex="0">
+                <input type="file" id="other-img02">
+                <span class="picture-image">choose a other image02</span>
+            </label>
+
+            <label class="other-cat-img" tabindex="0">
+                <input type="file" id="other-img03">
+                <span class="picture-image">choose a other image03</span>
+            </label>
+
+            <label class="other-cat-img" tabindex="0">
+                <input type="file" id="other-img04">
+                <span class="picture-image">choose a other image04</span>
+            </label>
+        </div>
+
+    </section>
+    <button id="send-btn">enviar</button>
+</body>
+
+</html>
