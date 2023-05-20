@@ -25,7 +25,7 @@ async function renderPage() {
 
     for (let info of catPhotosContainerInfo) {
         catPhotosContainer.innerHTML += `
-        <a href="pages/cat-info.html" id="${info.id}" class="cat-card">
+        <a href="pages/cat-info.html?id=${info.id}" class="cat-card">
                 <img src="${info.imgUrl}">
                 <p>${info.name}</p>
         </a>
@@ -40,14 +40,6 @@ async function renderPage() {
         catNameSugestion.innerHTML += `
         <option>${element}</option>
         `
-    })
-
-    var catCard = document.querySelectorAll('.cat-card')
-
-    catCard.forEach(element => {
-        element.addEventListener('click', () => {
-            localStorage.setItem('card-render-id', element.id)
-        })
     })
 
     var catFormSearch = document.querySelector('#cat-form-search')
