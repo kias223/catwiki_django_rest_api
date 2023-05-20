@@ -1,6 +1,6 @@
-const baseApi = 'http://127.0.0.1:8000/'
-const catInfoId = localStorage.getItem('card-render-id')
-var affectionLevel = 0
+const baseApi = 'https://ilquias223.pythonanywhere.com/'
+const urlParams = new URLSearchParams(window.location.search)
+const catInfoId = urlParams.get('id')
 
 const barsRenderContent = (statusNum) => {
     var barsContent = ''
