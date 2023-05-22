@@ -46,6 +46,7 @@ sendBtn.addEventListener('click', () => {
         method: 'POST',
         body: data
     })
+    location.reload()
 })
 
 
